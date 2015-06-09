@@ -219,7 +219,7 @@ CL &lt;- 0.95
 result &lt;- get.tparams.withCI (y, 2.1, 20, CL = CL) 
 proc.time() - ptm</code></pre>
 <pre><code>##    user  system elapsed 
-##  12.132   0.000  12.146</code></pre>
+##  12.144   0.052  12.210</code></pre>
 <pre class="r"><code>str &lt;- sprintf (&quot;nu = %.2f, %.0f%% CI = [%.2f, %.2f]&quot;,
     result$nu, (100*CL), result$nu.CI[1], result$nu.CI[2])
 print (str)</code></pre>
